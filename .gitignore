@@ -1,0 +1,29 @@
+# Node & Frontend
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# Python & Backend
+__pycache__/
+*.py[cod]
+*$py.class
+env/
+venv/
+.venv/
+.env
+.env.*
+!.env.example
+
+# Model Weights & Large Files (JANGAN DIUPLOAD)
+backend/models/
+*.pt
+*.bin
+*.h5
+*.safetensors
+*.ckpt
+
+# OS Files
+.DS_Store
+Thumbs.db
