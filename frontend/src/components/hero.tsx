@@ -56,7 +56,7 @@ export default function Hero() {
             {[
               { icon: Bot, label: "Model", value: "IndoBERT" },
               { icon: Database, label: "Dataset", value: "E-Commerce Reviews" },
-              { icon: Zap, label: "Aspek", value: "5 Kategori" },
+              { icon: Zap, label: "Aspek", value: "9 Kategori" },
             ].map((stat, i) => (
               <div key={i} className="flex flex-col items-center p-6 rounded-2xl bg-card border border-border shadow-sm">
                 <div className="p-3 bg-primary/10 text-primary rounded-xl mb-4">

@@ -24,7 +24,7 @@ export default function Home() {
             <FeatureCard 
               icon={Search}
               title="Analisis Multi-Aspek"
-              description="Mengidentifikasi 5 aspek kritis dari ulasan secara bersamaan dalam satu kalimat."
+              description="Mengidentifikasi 9 aspek kritis dari ulasan secara bersamaan dalam satu kalimat."
               delay={0.1}
             />
             <FeatureCard 
@@ -53,8 +53,8 @@ export default function Home() {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <SectionHeading 
-            title="5 Aspek Analisis Utama" 
-            subtitle="Model kami dilatih secara khusus untuk mendeteksi sentimen pada lima kategori aspek berikut dari ulasan pengguna."
+            title="9 Aspek Analisis Utama" 
+            subtitle="Model kami dilatih secara khusus untuk mendeteksi sentimen pada sembilan kategori aspek berikut dari ulasan pengguna."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
