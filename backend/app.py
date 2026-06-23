@@ -108,7 +108,10 @@ def load_model(name, path, hf_id):
         tokenizer = AutoTokenizer.from_pretrained(path) if os.path.exists(os.path.join(path, "tokenizer_config.json")) else AutoTokenizer.from_pretrained(hf_id)
         model = ABSAModel(hf_id, NUM_ASPECTS).to(DEVICE)
         
-        weights_path = os.path.join(path, "model_weights.pt")
+        # Cek apakah ada file bobot terbaik (best_...)
+        best_weights_path = os.path.join(path, f"best_{os.path.basename(path)}.pt")
+        weights_path = best_weights_path if os.path.exists(best_weights_path) else os.path.join(path, "model_weights.pt")
+        
         if os.path.exists(weights_path):
             model.load_state_dict(torch.load(weights_path, map_location=DEVICE))
         else:
